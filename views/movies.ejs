@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popular Movies</title>
+  <link rel="manifest" href="/manifest.json">
+</head>
+<h1>Les films les plus populaires</h1>
+<form method="post" action="/movies">
+    <input type="text" name="searchTerm">
+    <button type="submit">Rechercher</button>
+</form>
+  <% if (movies && movies.length > 0) { %>
+    <ul>
+        <% movies.forEach(function(movie) { %>
+            <li><%= movie.title %></li>
+        <% }); %>
+    </ul>
+<% } else { %>
+    <p>Aucun film disponible pour le moment.</p>
+<% } %>
+</body>
+</html>
