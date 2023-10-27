@@ -1,0 +1,11 @@
+{
+    "lang":"en-us",
+    "name":"Convertisseur de température",
+    "short_name":"CTA",
+    "description":"Conversion de température Kelvin et Celsius",
+    "start_url":"/",
+    "background_color":"grey",
+    "theme_color":"black",
+    "orientation":"any",
+    "display":"standalone"
+}

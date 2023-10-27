@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="convert.css">
+    <link rel="manifest" href="/manifest.json">
+    <title>Convertisseur de temperature</title>
+</head>
+<body>
+    <h2>Nous allons convertir des temperatures</h2>
+    <form id="converter">
+    <label for="temp">Temperature</label>
+    <input type="text" value="30" id="temp" name="temp">
+    <label for="conversion"></label>
+    <select id="conversion" name="conversion">
+        <option value="c">Celsius</option>
+        <option value="k">Kelvin</option>
+    </select>
+    <h3>En</h3>
+    <select id="converti" name="converti">
+        <option value="c">Celsius</option>
+        <option value="k">Kelvin</option>
+    </select>
+    <label for="sortie">Resultat</label>
+    <output name="sortie" id="sortie" for="temp conversion sortie">37</output>
+    </form>
+    <script src="convertir.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/sw.js',{scope:'/'})
+        }
+    </script>
+</body>
+</html>
