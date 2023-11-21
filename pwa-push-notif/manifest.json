@@ -1,0 +1,37 @@
+{
+    "lang":"en-us",
+    "name":"push notif",
+    "short_name":"push notif",
+    "description":"essai push notif",
+    "start_url":"/",
+    "background_color":"grey",
+    "theme_color":"black",
+    "orientation":"any",
+    "display":"standalone",
+    "shortcuts":[
+        {
+            "name":"Articles",
+            "short_name":"Articles",
+            "url":"/articles",
+            "description":"articles"
+        },
+        {
+            "name":"Auteurs",
+            "short_name":"Auteurs",
+            "url":"/auteurs",
+            "description":"auteurs"
+        },
+        {
+            "name":"Offres",
+            "short_name":"Offres",
+            "url":"/offres",
+            "description":"offres"
+        },
+        {
+            "name":"Outils",
+            "short_name":"Outils",
+            "url":"/outils",
+            "description":"outils"
+        }
+    ]
+}
